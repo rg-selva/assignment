@@ -4,8 +4,8 @@ import urllib.parse
 from flask import Flask
 from flask import request
 import flask
-username = urllib.parse.quote_plus('selva')
-password = urllib.parse.quote_plus("Asdf@123")
+username = urllib.parse.quote_plus('<username>')
+password = urllib.parse.quote_plus("<password>")
 
 url = "mongodb+srv://{}:{}@firstapplication.sin0ygt.mongodb.net/?retryWrites=true&w=majority".format(username, password)
 cluster = MongoClient(url)
